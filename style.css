@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 *{
     padding: 0;
@@ -8,7 +9,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     background-color: rgb(52, 49, 49);
 }
@@ -18,6 +19,7 @@ a{
 }
 
 header{
+    font-family: 'Montserrat', sans-serif;
     background-color: #2a9d8f;
     color: rgb(0, 0, 0);
     height: 30px;
@@ -26,6 +28,7 @@ header{
 }
 
 footer {
+    font-family: 'Montserrat', sans-serif;
     background-color: #2a9d8f;
     color: rgb(0, 0, 0);
     height: 30px;
@@ -39,6 +42,7 @@ img {
     object-fit: fill;
 }
 p {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -103,6 +107,7 @@ a, a:hover {
     z-index: 1;
 }
 #presentation h1{
+    font-family: 'Rokkitt', sans-serif;
     display: block;
     width: fit-content;
     font-size: 8rem;
@@ -208,11 +213,13 @@ a, a:hover {
 }
 
 #tips .tip-info h1{
+    font-family: 'Rokkitt', sans-serif;
     font-size: 4rem;
     text-shadow: 0.1em 0.1em 0.2em rgb(123, 123, 123);
 }
 
 #tips .tip-info h2{
+    font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     font-size: 2rem;
     text-shadow: 0em 0em 0.1em rgb(123, 123, 123);
@@ -223,7 +230,7 @@ a, a:hover {
     height: 300px;
     overflow: hidden;
     position: relative;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 }
 
 #tips .project-image:after {
