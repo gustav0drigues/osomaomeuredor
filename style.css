@@ -201,12 +201,12 @@ a, a:hover {
 
 #tips .tip-info {
     padding: 30px;
-    flex-basis: 80%;
+    flex-basis: 120%;
     height: 300px;
     width: 300px;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
     flex-direction: column;
     border-radius: 10px 10px 0 0;
     background-image: linear-gradient(45deg, rgb(172, 193, 180) 0%, #5f8b80 100%);
@@ -230,7 +230,7 @@ a, a:hover {
     height: 300px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 #tips .project-image:after {
@@ -241,11 +241,12 @@ a, a:hover {
     height: 100%;
     width: 100%;
 }
+
 #tips .project-image img{
     transition: 0.5s ease transform;
 }
 #tips .tip-item:hover .project-image img{
-    transform: scale(1.2);
+    transform: scale(1.5) rotate(20deg);
 }
 
 #tips .cta {
