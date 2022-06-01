@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Rokkitt', serif;
+    scroll-behavior: smooth;
+    background-color: rgb(52, 49, 49);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #2a9d8f;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #2a9d8f;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: fill;
+}
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+nav a{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+nav img {
+    width: 20px;
+    height: 20px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.osamr-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.osamr-contact-container img{
+    margin-right: 10px;
+}
+
+.project-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+/* Apresentação */
+
+#presentation{
+    background-image: url(img/vinyl-1595847_1280.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#presentation h1{
+    display: block;
+    width: fit-content;
+    font-size: 8rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#presentation h1:nth-child(1){
+    animation-delay: .8s;
+}
+#presentation h1:nth-child(2){
+    animation-delay: 1.8s;
+}
+#presentation h1:nth-child(3){
+    animation-delay: 2.8s;
+}
+
+#presentation .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #2a9d8f;
+    background-color: transparent;
+    border: 2px solid #2a9d8f;
+    font-size: 2rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 25px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+
+}
+#presentation .cta:hover{
+    color: rgb(185, 190, 144);
+    font-weight: 700;
+    background-color: #2a9d8f;
+}
+#presentation h1 span{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: goldenrod;
+}
+#presentation h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#presentation h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#presentation h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#presentation::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    height:100%;
+    width: 100%;
+    background-color: rgb(0, 2, 4);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Projetos */
+
+#tips .all-tips {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+
+}
+#tips .tip-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#tips .tip-info {
+    padding: 30px;
+    flex-basis: 80%;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    background-image: linear-gradient(45deg, rgb(172, 193, 180) 0%, #5f8b80 100%);
+}
+
+#tips .tip-info h1{
+    font-size: 4rem;
+    text-shadow: 0.1em 0.1em 0.2em rgb(123, 123, 123);
+}
+
+#tips .tip-info h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-shadow: 0em 0em 0.1em rgb(123, 123, 123);
+}
+
+#tips .project-image {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+#tips .project-image:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+}
+#tips .project-image img{
+    transition: 0.5s ease transform;
+}
+#tips .tip-item:hover .project-image img{
+    transform: scale(1.2);
+}
+
+#tips .cta {
+    display: inline-block;
+    padding: 5px 5px;
+    color: black bold;
+    background-color: #2a9d8f;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 25px;
+}
+
+/* Keyframes */
+
+@keyframes text_reveal{
+    100%{
+        color: #ee624d;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+}
+
+
+@keyframes text_reveal_box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left:100%
+    }
+}
+
+/* Media Query */
+@media only screen and (max-width: 300px) {
+    #tips .tip-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    #tips .all-tips .tip-info{
+        height: 100%
+    }
+    #tips .all-tips .project-image{
+        height: 100%
+    }
+
+}
