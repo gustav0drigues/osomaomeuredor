@@ -129,8 +129,8 @@ a, a:hover {
 #presentation .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: #2a9d8f;
-    background-color: transparent;
+    color: rgb(185, 190, 144);
+    background-color: #2a9d8f;
     border: 2px solid #2a9d8f;
     font-size: 2rem;
     text-shadow: 0.1em 0.1em 0.2em black;
@@ -142,9 +142,9 @@ a, a:hover {
 
 }
 #presentation .cta:hover{
-    color: rgb(185, 190, 144);
+    color: #2a9d8f;
     font-weight: 700;
-    background-color: #2a9d8f;
+    background-color: rgb(185, 190, 144);
 }
 #presentation h1 span{
     position: absolute;

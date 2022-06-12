@@ -168,7 +168,7 @@ a{
 }
 
 .card image{
-    object-fit: fill;
+    object-fit: contain;
 }
 .card:hover{
     transform: translateY(-7px);
