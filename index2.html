@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="css2/style2.css">
+    <link rel="stylesheet" href="css2/responsive.css">
+    <title>O Som Ao Meu Redor</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="img/favicon-32x32.png" alt="logo">
+            <div class="menu-section">
+                <div class="container-menu">
+                    <input type="checkbox" id="checkbox-menu">
+                    <label class="menu-button-container" for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#links-uteis">Links úteis</a>
+                            </li>
+                            <li>
+                                <a href="#fieldset">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container-main">
+            <div>
+                <h2><span>Inscreva-se agora na newsletter</span></h2>
+                <h3>Música alimenta a alma e nos faz sentir vivos.<br>
+                    Fique por dentro de todas as nossas novidades!</h3>
+                <form>
+                    <input type="text" placeholder="João da Silva">
+                    <input type="email" placeholder="seuemail@email.com">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <img src="img/music-player-2951399_1280.jpg" alt="">
+        </div>
+    </main>
+
+    <section id="links-uteis">
+    <section class="cards">
+        <div class="card">
+            <a href="https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/" target="_blank">
+                <div class="image">
+                    <img src="./img/mauro_ferreira1.webp" alt="vinyl">
+                </div>
+                <div class="content">
+                    <p class="title-text-medium">Blog do Mauro Ferreira</p>
+                    <div class="info">
+                        <p class="text-medium">Um dos principais e mais influentes críticos musicais do país</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://www.instagram.com/oquecresciouvindo/" target="_blank">
+                <div class="image">
+                    <img src="./img/cresci.png" alt="vinyl">
+                </div>
+                <div class="content">
+                    <p class="title-text-medium">O Que Cresci Ouvindo</p>
+                    <div class="info">
+                        <p class="text-medium">Página idealizada pelo historiador Ivan Lima que traça um paralelo entre
+                            álbuns e o contexto histórico em que foram gravados</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://www.instagram.com/oquecresciouvindo/" target="_blank">
+                <div class="image">
+                    <img src="./img/tmdqa.jpg" alt="vinyl">
+                </div>
+                <div class="content">
+                    <p class="title-text-medium">Tenho Mais Discos Que Amigos</p>
+                    <div class="info">
+                        <p class="text-medium">Notícias, entrevistas, resenhas, listas e muito mais relacionado à música
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://www.discogs.com/" target="_blank">
+                <div class="image">
+                    <img src="./img/discogs.png" alt="vinyl">
+                </div>
+                <div class="content">
+                    <p class="title-text-medium">Discogs</p>
+                    <div class="info">
+                        <p class="text-medium">Banco de dados com informações sobre discos, além de marketplace
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</section>
+
+    <fieldset id="fieldset">
+        <legend>Contato</legend>
+        <form>
+            <p><label for="nome">Nome Completo*: </label><input type="text" name="nome" placeholder="João da Silva"
+                    required size="40px" id="nome"></p>
+            <p><label for="sobrenome">E-mail*: </label><input type="email" name="email"
+                    placeholder="joaosilva@email.com" required size="40px" id="sobrenome"></p>
+            <p><label for="nascimento">Nascimento: </label><input type="date" id="dtini" name="dtinicio"
+                    min="1920-01-01" max="2022-12-31" size="40px" id="nascimento"></p>
+            <div class="contact-selection">
+                <label for="contato">Tipo de contato*:</label>
+                <select id="contato">
+                    <option value="1" selected disabled>Selecione sua opção</option>
+                    <option value="2">Informação</option>
+                    <option value="3">Dúvida</option>
+                    <option value="4">Sugestão</option>
+                    <option value="5">Reclamação</option>
+                    </option><select name="contato" id="icontato"></select>
+            </div>
+            <div>
+                <textarea id="texto" name="texto" rows="8" cols="60">Sua mensagem aqui</textarea>
+            </div>
+            <div class="concordo">
+                <input type="checkbox" id="checkbox-agree" name="concordo" <label for="concordo">Concordo com os
+                termos</label>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+
+
+    </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+    outline: 0;
+}
+
+
+html, body{
+    background: #e9f3f2;
+    font-family: 'Montserrat', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    background-color: #2a9d8f;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    height: 80px;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover{
+    background: rgba(255, 255, 255, 0.15);
+}
+
+header .container img{
+    height: 30px;
+}
+
+#checkbox-menu{
+    display: none;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 100px auto 0px auto;
+}
+
+
+h2{
+    align-items: center;
+    justify-content: space-between;
+    color: #ee624d;
+    text-shadow: 0.1em 0.1em 0.1em gray;
+    font-size:45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(52, 38, 38);
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+form{
+    margin-top: 20px;
+}
+
+
+form input{
+    align-items:center;
+    width: 380px;
+    padding-left: 15px;
+    font-size: 15px;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 20px;
+    border-radius: 5px;
+    border: 1px solid #2a9d8f;
+}
+
+form [type="submit"]{
+    width: 100px;
+    padding-left: 0px;
+    height: 40px;
+    background-color: #2a9d8f;
+    color: goldenrod;
+    text-transform:uppercase;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgba(42, 157, 143, 0.75);
+    transform: translateY(1px);
+}
+
+main .container-main img{
+    width: 450px;
+}
+
+
+a{
+    text-decoration: ;
+}
+
+.cards{
+    width:50%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.title-text-medium{
+    font-weight: 700;
+    color: #ae493a;
+    margin-bottom: 10px;
+}
+
+.text-medium{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ae493a;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px rgb(168, 165, 165);
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card image{
+    object-fit: fill;
+}
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image{
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
+}
+
+.image img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    margin: 20px;
+    color: white;
+}
+
+.title{
+    margin-bottom:0px;
+}
+
+fieldset{
+    background-color: #d3e9e6;
+    width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(71, 64, 64);
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+select{
+    margin-top: 20px;
+    width: 380px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+textarea{
+    display: inline-block;
+    width: 380px;
+    padding-left: 15px;
+    text-align: start;
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 20px;
+    border-radius: 5px;
+    border: 1px solid #2a9d8f;
+    margin: 20px auto;
+}
+
+label{
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+#checkbox-agree{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.contact-selection label{
+    display:flex;
+    align-items: center;
+}
