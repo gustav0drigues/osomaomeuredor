@@ -131,7 +131,7 @@ a, a:hover {
     padding: 10px 30px;
     color: rgb(185, 190, 144);
     background-color: #2a9d8f;
-    border: 2px solid #2a9d8f;
+    border: 2px solidrgb(185, 190, 144);
     font-size: 2rem;
     text-shadow: 0.1em 0.1em 0.2em black;
     text-transform: uppercase;
